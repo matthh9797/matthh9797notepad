@@ -1,0 +1,35 @@
+<style>
+    .my-flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 5px solid black;
+        background-color: beige;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .my-flex-container .flex-item {
+        height: 80px;
+        width: 80px;
+        border: 2px dashed red;
+        margin: 25px 5px 25px 5px;
+        text-align: center;
+        background-color: aquamarine;
+    }
+    .my-flex-container .box:nth-child(odd) {
+        height: 150px;
+    }   
+    .my-flex-container .box:nth-child(4) {
+        align-self: flex-start;
+    }
+</style>
+
+<div class="my-flex-container container">
+    <div style="align-item: flex-start;" class="box flex-item"><h1>1</h1></div>
+    <div class="box flex-item"><h1>2</h1></div>
+    <div class="box flex-item"><h1>3</h1></div>
+    <div class="box flex-item"><h1>4</h1></div>
+    <div class="box flex-item"><h1>5</h1></div>
+</div>
